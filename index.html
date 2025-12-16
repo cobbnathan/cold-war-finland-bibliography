@@ -128,13 +128,79 @@
     border: 1px solid #ccc;
   }
 
-  /* Row 3: tags */
-  #tagFilters {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    padding-top: 0.25rem;
-  }
+    /* Row 3: tags */
+    /* Wrapper */
+    #tagFiltersWrapper {
+      position: relative;
+      display: flex;
+      flex-direction: column; /* desktop: fine */
+      gap: 0.25rem;
+    }
+
+    /* Toggle button */
+    #tagToggleBtn {
+      display: none;              /* only show on mobile */
+      background: #e4e9f2;
+      border: none;
+      padding: 0.5rem 0.75rem;
+      border-radius: 12px;
+      cursor: pointer;
+      font-weight: 600;
+      color: #2a4b8d;
+    }
+
+    /* Arrow styling */
+    #tagToggleBtn .arrow {
+      display: inline-block;
+      margin-left: 0.25rem;
+      transition: transform 0.3s ease;
+    }
+
+    /* Rotated state when dropdown is open */
+    #tagFilters.show + #tagToggleBtn .arrow,
+    #tagToggleBtn.active .arrow {
+      transform: rotate(180deg);
+    }
+
+    /* Tag container */
+    #tagFilters {
+      display: flex;              /* flex row, wraps naturally */
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    /* ---------------- MOBILE ---------------- */
+    @media (max-width: 600px) {
+      #tagToggleBtn {
+        display: block;
+      }
+
+      #tagFilters {
+        display: none;            /* hide initially on mobile */
+        flex-wrap: wrap;          /* tags wrap naturally */
+        gap: 0.5rem;
+        background: #f7f9fc;
+        padding: 0.5rem;
+        border-radius: 12px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: auto;              /* width grows to fit tags */
+        max-width: 95%;           /* prevent overflow */
+        z-index: 100;
+      }
+
+      #tagFilters.show {
+        display: flex;
+      }
+
+      /* Keep tags only as big as their content */
+      .tag-filter {
+        flex: none;
+      }
+    }
+
 
   .tag-filter {
     padding: 0.3rem 0.75rem;
@@ -276,41 +342,62 @@
   .doi-button:hover { background: #1f3670; }
 
   /* ---------------- MODAL ---------------- */
-  #modal {
-    display: none;
-    position: fixed;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    background: rgba(0,0,0,0.45);
-    justify-content: center;
-    align-items: flex-start;
-    padding: 3rem 1rem;
-    overflow-y: auto;
-    z-index: 2000;
-  }
+  /* ---------------- MODAL ---------------- */
+#modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  justify-content: center;
+  align-items: flex-start;
+  padding: 3rem 1rem;
+  overflow-y: auto;
+  z-index: 2000;
+  box-sizing: border-box;
+}
 
+#modalContent {
+  background: white;
+  width: 100%;
+  max-width: 700px;
+  padding: 1.5rem 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 5vh;
+  box-sizing: border-box;
+}
+
+#modalBody .text-abstract,
+#modalBody p.raw,
+#modalBody .raw-text {
+  word-wrap: break-word;
+  overflow-wrap: anywhere;
+  white-space: pre-wrap;
+}
+
+/* Close button */
+#modalClose {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.8rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #666;
+}
+
+/* ---------------- MOBILE ---------------- */
+@media (max-width: 600px) {
   #modalContent {
-    background: white;
-    max-width: 700px;
-    width: 100%;
-    padding: 1.5rem 2rem;
-    border-radius: 16px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.25);
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    z-index: 2001;
+    max-width: 95%;
+    padding: 1.5rem;
+    margin-top: 2rem;
   }
+}
 
-  #modalClose {
-    position: absolute;
-    top: 0.6rem;
-    right: 0.8rem;
-    font-size: 1.5rem;
-    cursor: pointer;
-    color: #666;
-  }
 
   #modalBody h2 {
     margin: 0 0 0.3rem 0;
@@ -336,13 +423,13 @@
     .suggest-content {
       background: white;
       max-width: 520px;
-      margin: auto;
       padding: 1.5rem 2rem;
       border-radius: 16px;
       box-shadow: 0 4px 20px rgba(0,0,0,0.25);
       position: relative;
       display: flex;
       flex-direction: column;
+      margin: 5vh auto auto;
       gap: 0.75rem;
     }
 
@@ -385,7 +472,7 @@
 
     #suggestClose {
       position: absolute;
-      top: 0.6rem;
+      top: 0.5rem;
       right: 0.8rem;
       font-size: 1.5rem;
       cursor: pointer;
@@ -462,14 +549,15 @@
   </div>
 
   <!-- Row 3: Tags -->
-  <div id="tagFilters"></div>
+  <div id="tagFiltersWrapper">
+    <button id="tagToggleBtn">Tags <i class="arrow fa-solid fa-caret-down"></i></button>
+    <div id="tagFilters"></div>
+  </div>
 
 </header>
 
-
 <!-- Page content -->
 <div id="entriesContainer"></div>
-
 
 <!-- Template for entries -->
 <template id="entryCardTemplate">
@@ -651,6 +739,20 @@ function renderTagFilters(tags) {
     });
     container.appendChild(btn);
   });
+
+  const tagToggleBtn = document.getElementById('tagToggleBtn');
+
+  tagToggleBtn.addEventListener('click', () => {
+    container.classList.toggle('show');
+    tagToggleBtn.classList.toggle('active'); // rotate arrow
+  });
+
+  // Optional: close dropdown when clicking outside
+  document.addEventListener('click', (e) => {
+    if (!tagFiltersWrapper.contains(e.target)) {
+      container.classList.remove('show');
+    }
+  });
 }
 
 /* ---------------- Render Entries ---------------- */
@@ -805,6 +907,7 @@ function openModal(entry) {
   if (entry.raw) {
     const rawEl = document.createElement('p');
     rawEl.innerHTML = entry.raw;
+    rawEl.classList.add('raw-text');  // <-- new class
     body.appendChild(rawEl);
   }
 
