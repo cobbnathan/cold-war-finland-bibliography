@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+<title>Music and Politics in Cold War Finland – An Interactive Bibliography</title>
+
+<style>
+  body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 20px;
+    background: #f7f9fc;
+    color: #333;
+  }
+
+  /* ---------------- HEADER ---------------- */
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #f7f9fc;
+    padding: 0.75rem 1rem 1rem;
+    border-bottom: 1px solid #d3d8e2;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .site-header.header-shadow {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+  }
+
+  /* Row 1: logo — title — spacer */
+  .header-top {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+  }
+
+  .logo-link {
+    display: inline-block;
+    width: 56px;
+    height: 56px;
+  }
+
+  .site-logo {
+    width: auto;
+    height: 50px;
+    opacity: 0.95;
+  }
+
+  .site-title {
+    margin: 0;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #2a4b8d;
+  }
+
+  .header-spacer {
+    width: 56px; /* balances the logo width */
+  }
+
+  @media (max-width: 540px) {
+    .logo-link { width: 44px; height: 44px; }
+    .site-title { font-size: 1.05rem; }
+  }
+
+  /* Row 2: search + sort */
+  #controls {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  #searchInput {
+    padding: 0.6rem 0.8rem;
+    flex: 1;
+    min-width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    transition: box-shadow 0.2s ease;
+  }
+  #searchInput:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(42, 75, 141, 0.25);
+  }
+
+  #sortSelect {
+    padding: 0.6rem;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+  }
+
+  /* Row 3: tags */
+  #tagFilters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding-top: 0.25rem;
+  }
+
+  .tag-filter {
+    padding: 0.3rem 0.75rem;
+    background: #e4e9f2;
+    cursor: pointer;
+    border-radius: 12px;
+    border: none;
+  }
+  .tag-filter:hover { background: #d5dcef; }
+  .tag-filter.active {
+    background: #2a4b8d;
+    color: #fff;
+  }
+
+  /* ---------------- ENTRY CARDS ---------------- */
+  #entriesContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+      padding-top: 1rem;
+  }
+
+  .entry-card {
+    position: relative; /* needed for floating DOI button */
+    background: white;
+    padding: 1rem 1.2rem;
+    width: calc(33% - 1rem);
+    min-width: 260px;
+    border-radius: 14px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    cursor: pointer;
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-basis: 25%;
+    flex-grow: 1;
+    gap: 0.3rem;
+  }
+  .entry-card:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  }
+
+  .entry-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .entry-title { margin: 0 0 0.3em 0; }
+  .entry-title-trans {
+    margin: 0;
+    color: #666;
+    font-size: 0.85em;
+  }
+
+  .entry-subtitle {
+      margin: 0;
+  }
+  .entry-year {
+    font-size: 0.85em;
+    color: #666;
+    margin-left: 0.5rem;
+  }
+
+  .author-tags {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    width: 100%;
+  }
+  .entry-author-group {
+    margin-block-end: 0.3em;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: .2em;
+    width: 100%;
+  }
+
+  .entry-publisher {
+    margin-block-start: 0;
+    color: #666;
+    font-size: 0.85em;
+    text-align: right;
+    white-space: normal;
+  }
+
+  .tags {
+    margin-top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+  }
+
+  .tag {
+    font-size: 0.75rem;
+    background: #eef2fa;
+    padding: 0.25rem 0.45rem;
+    border-radius: 8px;
+  }
+
+  .entry-bottom {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 0.3rem;
+  }
+
+  .text-italic {
+      font-style: italic;
+  }
+
+  .text-abstract {
+    font-size: .8em;
+    background: #f7f9fc;
+    color: #333;
+    padding: 1rem 1.2rem;
+    border-radius: 14px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  }
+
+  /* DOI button */
+  .doi-button {
+    position: absolute;
+    bottom: 0.6rem;
+    right: 0.6rem;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: none;
+    background: #2a4b8d;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  .doi-button:hover { background: #1f3670; }
+
+  /* ---------------- MODAL ---------------- */
+  #modal {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.45);
+    justify-content: center;
+    align-items: flex-start;
+    padding: 3rem 1rem;
+    overflow-y: auto;
+    z-index: 2000;
+  }
+
+  #modalContent {
+    background: white;
+    max-width: 700px;
+    width: 100%;
+    padding: 1.5rem 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    z-index: 2001;
+  }
+
+  #modalClose {
+    position: absolute;
+    top: 0.6rem;
+    right: 0.8rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #666;
+  }
+
+  #modalBody h2 {
+    margin: 0 0 0.3rem 0;
+    color: #2a4b8d;
+  }
+
+  #modalBody .tags {
+    margin-top: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+  }
+
+</style>
+</head>
+
+<body>
+
+<header class="site-header">
+
+  <!-- Row 1: Logo + title -->
+  <div class="header-top">
+    <a href="/" class="logo-link">
+      <img src="finnish_music_logo.png" alt="Logo" class="site-logo" />
+    </a>
+
+    <h1 class="site-title">Music and Politics in Cold War Finland – An Interactive Bibliography</h1>
+
+    <div class="header-spacer"></div>
+  </div>
+
+  <!-- Row 2: Search + Sort -->
+  <div id="controls">
+    <input type="text" id="searchInput" placeholder="Search…" />
+    <select id="sortSelect">
+      <option value="title">Sort by Title</option>
+      <option value="author">Sort by Author</option>
+      <option value="year">Sort by Year</option>
+    </select>
+  </div>
+
+  <!-- Row 3: Tags -->
+  <div id="tagFilters"></div>
+
+</header>
+
+
+<!-- Page content -->
+<div id="entriesContainer"></div>
+
+
+<!-- Template for entries -->
+<template id="entryCardTemplate">
+  <div class="entry-card">
+    <div class="entry-header">
+      <h3 class="entry-title"></h3>
+      <span class="entry-year"></span>
+    </div>
+
+    <p class="entry-title-trans"></p>
+    <p class="entry-subtitle"></p>
+
+    <div class="entry-bottom">
+      <div class="author-tags">
+        <p class="entry-author-group">
+          <strong class="entry-author"></strong>
+          <span class="entry-publisher"></span>
+        </p>
+        <div class="tags"></div>
+      </div>
+      <button class="doi-button">→</button>
+    </div>
+  </div>
+</template>
+
+
+<!-- Modal -->
+<div id="modal">
+  <div id="modalContent">
+    <span id="modalClose">&times;</span>
+    <div id="modalBody"></div>
+  </div>
+</div>
+
+
+<script>
+/* ---------------- Load JSON ---------------- */
+async function loadEntries() {
+  const response = await fetch('bibliography.json');
+  return await response.json();
+}
+
+let allEntries = [];
+
+/* ---------------- Resource Formatters ---------------- */
+const resourceFormatters = {
+  article(entry) {
+    return {
+      titleHTML: `“${entry.title}”`,
+      subtitleHTML: entry.container_title
+        ? `<span class="text-italic">${entry.container_title}</span>`
+        : '',
+      metaHTML: [
+        entry.volume ? `vol. ${entry.volume}` : null,
+        entry.issue ? `no. ${entry.issue}` : null,
+        entry.pages ? `pp. ${entry.pages}` : null
+      ].filter(Boolean).join(', ')
+    };
+  },
+
+  chapter(entry) {
+    return {
+      titleHTML: `“${entry.title}”`,
+      subtitleHTML: entry.container_title
+        ? `In <span class="text-italic">${entry.container_title}</span>`
+        : '',
+      metaHTML: entry.pages ? `pp. ${entry.pages}` : ''
+    };
+  },
+
+  book(entry) {
+    return {
+      titleHTML: `<span class="text-italic">${entry.title}</span>`,
+      subtitleHTML: '',
+      metaHTML: entry.publisher || ''
+    };
+  },
+
+  website(entry) {
+    return {
+      titleHTML: `“${entry.title}”`,
+      subtitleHTML: `<span class="text-italic">${entry.publisher || ''}</span>`,
+      metaHTML: entry.url ? 'Online resource' : ''
+    };
+  }
+};
+
+/* ---------------- Render Tag Filters ---------------- */
+function renderTagFilters(tags) {
+  const container = document.getElementById('tagFilters');
+  container.innerHTML = '';
+
+  tags.forEach(tag => {
+    const btn = document.createElement('button');
+    btn.textContent = tag;
+    btn.classList.add('tag-filter');
+    btn.addEventListener('click', () => {
+      btn.classList.toggle('active');
+      applyFilters();
+    });
+    container.appendChild(btn);
+  });
+}
+
+/* ---------------- Render Entries ---------------- */
+function renderEntries(entries) {
+  const container = document.getElementById('entriesContainer');
+  container.innerHTML = '';
+  const template = document.getElementById('entryCardTemplate');
+
+  entries.forEach(entry => {
+    const clone = template.content.cloneNode(true);
+    const card = clone.querySelector('.entry-card');
+
+    const titleEl = clone.querySelector('.entry-title');
+    const subtitleEl = clone.querySelector('.entry-subtitle');
+    const titleTrans = clone.querySelector('.entry-title-trans');
+    const authorEl = clone.querySelector('.entry-author');
+    const publisherEl = clone.querySelector('.entry-publisher');
+    const yearEl = clone.querySelector('.entry-year');
+    const tagsEl = clone.querySelector('.tags');
+    const doiBtn = clone.querySelector('.doi-button');
+
+    /* -------- Formatting via resource_type -------- */
+    const formatter = resourceFormatters[entry.resource_type];
+    const formatted = formatter
+      ? formatter(entry)
+      : { titleHTML: entry.title || '(No title)', subtitleHTML: '', metaHTML: '' };
+
+    titleEl.innerHTML = formatted.titleHTML;
+
+    if (formatted.subtitleHTML) {
+      subtitleEl.innerHTML = formatted.subtitleHTML;
+    } else {
+      subtitleEl.remove();
+    }
+
+    if (entry.title_trans) {
+      titleTrans.textContent = `(${entry.title_trans})`;
+    } else {
+      titleTrans.remove();
+    }
+
+    /* -------- Authors -------- */
+    if (entry.authors?.length) {
+      const names = entry.authors.map(a => `${a.author_first} ${a.author_last}`);
+      authorEl.textContent =
+        names.length === 1
+          ? names[0]
+          : names.length === 2
+          ? names.join(' and ')
+          : names.slice(0, -1).join(', ') + ', and ' + names.at(-1);
+    } else {
+      authorEl.textContent = '';
+    }
+
+    /* -------- Meta / publisher -------- */
+    publisherEl.textContent = formatted.metaHTML || '';
+
+    if (!authorEl.textContent && !publisherEl.textContent) {
+      clone.querySelector('.entry-author-group').remove();
+    }
+
+    yearEl.textContent = entry.year || '';
+
+    /* -------- Tags -------- */
+    tagsEl.innerHTML = (entry.tags || [])
+      .map(t => `<span class="tag">${t}</span>`)
+      .join(' ');
+
+    /* -------- DOI / URL -------- */
+    if (entry.url) {
+      doiBtn.addEventListener('click', e => {
+        e.stopPropagation();
+        window.open(entry.url, '_blank');
+      });
+    } else {
+      doiBtn.style.display = 'none';
+    }
+
+    card.addEventListener('click', () => openModal(entry));
+    container.appendChild(clone);
+  });
+}
+
+/* ---------------- Sorting ---------------- */
+function sortEntries(entries) {
+  const key = document.getElementById('sortSelect').value;
+
+  return entries.slice().sort((a, b) => {
+    if (key === 'year') return (a.year || 0) - (b.year || 0);
+
+    if (key === 'author') {
+      const aLast = a.authors?.[0]?.author_last || a.author?.split(' ').slice(-1)[0] || '';
+      const bLast = b.authors?.[0]?.author_last || b.author?.split(' ').slice(-1)[0] || '';
+      return aLast.localeCompare(bLast);
+    }
+
+    if (key === 'title') {
+      const getTitle = e => Object.keys(e)
+        .filter(k => k.startsWith('title') && e[k])
+        .map(k => e[k])[0] || '';
+      return getTitle(a).localeCompare(getTitle(b));
+    }
+
+    return (a[key] || '').localeCompare(b[key] || '');
+  });
+}
+
+/* ---------------- Filters ---------------- */
+function applyFilters() {
+  const searchText = document.getElementById('searchInput').value.toLowerCase();
+  const activeTags = Array.from(document.querySelectorAll('.tag-filter.active'))
+    .map(btn => btn.textContent);
+
+  const filtered = allEntries.filter(e => {
+    const textMatch = (
+        (e.raw || '').toLowerCase().includes(searchText) ||
+        (e.abstract || '').toLowerCase().includes(searchText)
+    );
+
+    const tagMatch =
+      activeTags.length === 0 ||
+      activeTags.every(t => (e.tags || []).includes(t));
+
+    return textMatch && tagMatch;
+  });
+
+  renderEntries(sortEntries(filtered));
+}
+
+/* ---------------- Modal ---------------- */
+function openModal(entry) {
+  const modal = document.getElementById('modal');
+  const body = document.getElementById('modalBody');
+  const header = document.createElement('div');
+  const titleEl = document.createElement('h2');
+  const formatter = resourceFormatters[entry.resource_type];
+  const formatted = formatter(entry);
+
+  body.innerHTML = '';
+  titleEl.innerHTML = formatted.titleHTML;
+
+  header.appendChild(titleEl);
+  body.appendChild(header);
+
+  if (entry.abstract) {
+    const abstractEl = document.createElement('p');
+    abstractEl.innerHTML = entry.abstract;
+    abstractEl.classList.add('text-abstract');
+    body.appendChild(abstractEl);
+  }
+
+  if (entry.raw) {
+    const rawEl = document.createElement('p');
+    rawEl.innerHTML = entry.raw;
+    body.appendChild(rawEl);
+  }
+
+  if (entry.tags && entry.tags.length) {
+    const tagsEl = document.createElement('div');
+    tagsEl.className = 'tags';
+    tagsEl.innerHTML = entry.tags
+      .map(t => `<span class="tag">${t}</span>`)
+      .join(' ');
+    body.appendChild(tagsEl);
+  }
+
+  if (entry.url) {
+    const doiBtn = document.createElement('button');
+    doiBtn.className = 'doi-button';
+    doiBtn.textContent = '→';
+    doiBtn.addEventListener('click', e => {
+      e.stopPropagation();
+      window.open(entry.url, '_blank');
+    });
+    body.appendChild(doiBtn);
+  }
+
+  modal.style.display = 'flex';
+}
+
+document.getElementById('modalClose').addEventListener('click', () => {
+  document.getElementById('modal').style.display = 'none';
+});
+
+window.addEventListener('click', e => {
+  const modal = document.getElementById('modal');
+  if (e.target === modal) modal.style.display = 'none';
+});
+
+/* ---------------- Initialize ---------------- */
+async function init() {
+  allEntries = await loadEntries();
+
+  const tags = [...new Set(allEntries.flatMap(e => e.tags || []))].sort();
+  renderTagFilters(tags);
+
+  renderEntries(sortEntries(allEntries));
+
+  document.getElementById('searchInput').addEventListener('input', applyFilters);
+  document.getElementById('sortSelect').addEventListener('change', applyFilters);
+}
+
+// Add subtle header shadow on scroll
+window.addEventListener('scroll', () => {
+  const header = document.querySelector('.site-header');
+  if (window.scrollY > 10) {
+    header.classList.add('header-shadow');
+  } else {
+    header.classList.remove('header-shadow');
+  }
+});
+
+// todo:
+// - add "About" page
+// - add a page for static links, like to the society for finnish composers
+// - add links to recordings?
+// - format text in modal citation (needs to be rich html field)
+// - add form for submitting new resource for approval
+
+init();
+</script>
+
+</body>
+</html>
