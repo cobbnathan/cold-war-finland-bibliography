@@ -34,11 +34,15 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
   }
 
-  /* Row 1: logo — title — spacer */
+  /* Row 1 */
   .header-top {
     display: grid;
     grid-template-columns: auto 1fr auto;
     align-items: center;
+  }
+
+  .header-mobile {
+      display: none;
   }
 
   .logo-link {
@@ -59,12 +63,23 @@
     font-size: 1.4rem;
     font-weight: 600;
     color: #2a4b8d;
+    width: 100%;
+  }
+
+  .site-subtitle {
+    margin: 0;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #2a4b8d;
+    width: 100%;
   }
 
   .header-actions {
     width: 56px;
     display: flex;
     justify-content: flex-end;
+    margin-left: auto;
   }
 
   #suggestBtn {
@@ -97,11 +112,6 @@
       background: #d5dcef;
     }
 
-  @media (max-width: 540px) {
-    .logo-link { width: 44px; height: 44px; }
-    .site-title { font-size: 1.05rem; }
-  }
-
   /* Row 2: search + sort */
   #controls {
     display: flex;
@@ -112,7 +122,6 @@
   #searchInput {
     padding: 0.6rem 0.8rem;
     flex: 1;
-    min-width: 200px;
     border: 1px solid #ccc;
     border-radius: 12px;
     transition: box-shadow 0.2s ease;
@@ -169,39 +178,6 @@
       gap: 0.5rem;
     }
 
-    /* ---------------- MOBILE ---------------- */
-    @media (max-width: 600px) {
-      #tagToggleBtn {
-        display: block;
-      }
-
-      #tagFilters {
-        display: none;            /* hide initially on mobile */
-        flex-wrap: wrap;          /* tags wrap naturally */
-        gap: 0.5rem;
-        background: #f7f9fc;
-        padding: 0.5rem;
-        border-radius: 12px;
-        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: auto;              /* width grows to fit tags */
-        max-width: 95%;           /* prevent overflow */
-        z-index: 100;
-      }
-
-      #tagFilters.show {
-        display: flex;
-      }
-
-      /* Keep tags only as big as their content */
-      .tag-filter {
-        flex: none;
-      }
-    }
-
-
   .tag-filter {
     padding: 0.3rem 0.75rem;
     background: #e4e9f2;
@@ -214,6 +190,62 @@
     background: #2a4b8d;
     color: #fff;
   }
+
+  /* ---------------- MOBILE HEADER ---------------- */
+  @media (max-width: 600px) {
+  .site-header {
+      gap: .5em;
+  }
+  .header-title {
+      display: none;
+  }
+  .header-mobile {
+      display: block;
+  }
+  /* Reflow header top */
+  .site-title {
+    font-size: 1.05rem;
+    line-height: 1.25;
+    margin: 0;
+    padding: 0 0.5rem;
+  }
+  .site-subtitle {
+    font-size: .95rem;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+  }
+
+  .logo-link { width: 40px; height: 40px; }
+
+  #tagToggleBtn {
+    display: block;
+  }
+
+  #tagFilters {
+    display: none;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    background: #f7f9fc;
+    padding: 0.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: auto;
+    max-width: 95%;
+    z-index: 100;
+  }
+
+  #tagFilters.show {
+    display: flex;
+  }
+
+  .tag-filter {
+    flex: none;
+  }
+}
 
   /* ---------------- ENTRY CARDS ---------------- */
   #entriesContainer {
@@ -341,8 +373,7 @@
   }
   .doi-button:hover { background: #1f3670; }
 
-  /* ---------------- MODAL ---------------- */
-  /* ---------------- MODAL ---------------- */
+/* ---------------- MODAL ---------------- */
 #modal {
   display: none;
   position: fixed;
@@ -397,7 +428,6 @@
     margin-top: 2rem;
   }
 }
-
 
   #modalBody h2 {
     margin: 0 0 0.3rem 0;
@@ -520,25 +550,42 @@
 
 <header class="site-header">
 
-  <!-- Row 1: Logo + title -->
+  <!-- Row 1 -->
   <div class="header-top">
     <a href="/" class="logo-link" id="aboutTrigger">
       <img src="finnish_music_logo.png" alt="Logo" class="site-logo" />
     </a>
 
-    <h1 class="site-title">Music and Politics in Cold War Finland – An Interactive Bibliography</h1>
+    <div class="header-title">
+        <h1 class="site-title">
+          Music and Politics in Cold War Finland
+        </h1>
+        <h2 class="site-subtitle">
+            An Interactive Bibliography
+        </h2>
+    </div>
 
     <div class="header-actions">
-      <button id="suggestBtn" aria-label="Suggest a source" title="Suggest a source">
-          <i class="fa-regular fa-envelope"></i>
+      <button id="suggestBtn" aria-label="Suggest a source">
+        <i class="fa-regular fa-envelope"></i>
       </button>
       <button id="aboutButton" class="about-button" aria-label="About this bibliography">
-          <i class="fa-solid fa-question"></i>
+        <i class="fa-solid fa-question"></i>
       </button>
     </div>
   </div>
 
-  <!-- Row 2: Search + Sort -->
+
+  <div class="header-mobile">
+      <h1 class="site-title">
+          Music and Politics in Cold War Finland
+      </h1>
+      <h2 class="site-subtitle">
+          An Interactive Bibliography
+      </h2>
+  </div>
+
+  <!-- Row 2 -->
   <div id="controls">
     <input type="text" id="searchInput" placeholder="Search…" />
     <select id="sortSelect">
@@ -548,9 +595,11 @@
     </select>
   </div>
 
-  <!-- Row 3: Tags -->
+  <!-- Row 3 -->
   <div id="tagFiltersWrapper">
-    <button id="tagToggleBtn">Tags <i class="arrow fa-solid fa-caret-down"></i></button>
+    <button id="tagToggleBtn">
+      Tags <i class="arrow fa-solid fa-caret-down"></i>
+    </button>
     <div id="tagFilters"></div>
   </div>
 
