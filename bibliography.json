@@ -149,7 +149,7 @@
     "pages": "1–30",
     "url": "https://doi.org/10.1093/oxfordhb/9780190603908.001.0001",
     "tags": [
-      "Internationalism",
+      "Internationalization",
       "Popular Music"
     ],
     "abstract": "This chapter introduces new analytical framings of popular music in the Nordic countries and the implications therefore for broader discussions of the region’s uniqueness and global presence. The introduction first develops a broad interpretative narrative a broad interpretative narrative grounded in social science and considers its implications for existing cultural and disciplinary narratives. The second part closes in on more detailed issues of musical knowledge, drawing from the intellectual history of music, particularly musicology, while also integrating lessons from other disciplines such as geography. The specific focal points of the second part are the three thematic dimensions of the handbook—geography, history, and identity. Moreover, the literatures on Nordic popular music are discussed in detail. The final section introduces the individual chapter contributions."
@@ -622,7 +622,7 @@
     "url": "https://doi.org/10.1093/oxfordhb/9780190603908.013.0015",
     "tags": [
       "Indigenous Music",
-      "Internationalism",
+      "Internationalization",
       "Popular Music"
     ],
     "abstract": "This chapter presents case studies of three Sámi musicians, focusing on their aspirations for collective rights, cultural distinctiveness, and self-determination. Contrary to early twentieth-century fears that vocal genres like joik were disappearing, music has become one of the most important elements in stories of Sámi cultural survival in the twenty-first century. The chapter examines the role that music plays in valuing nature and imagining alternatives to dominant power regimes in the context of climate change. The author argues that in the face of threats to global survival, historians could give more priority to questions about how the past speaks to us and what it teaches us about survival."
@@ -866,7 +866,7 @@
     "abstract": "Earlier research has underlined the importance of the first incomes policy agreement in 1968, in analysing the qualitative shift to more consensual industrial relations and the stronger influence of labour market organizations in the Finnish welfare state legislation. The main argument is that this qualitative change in Finnish corporatism happened earlier. The compromise between employers and trade unions in the early 1960s was established not because of their strength but because of their simultaneous weakness and vulnerability. The left wing majority in the Eduskunta forced employers to adopt a more conciliatory and even pro‐active view of social reforms. Confederation of Finnish Trade Unions (SAK), which suffered from a severe split, was more than willing to co‐operate with Confederation of Finnish Employers (STK) in social policy as well as in wage bargaining.",
     "url": "https://doi.org/10.1080/03468750902770931",
     "tags": [
-      "Internationalism"
+      "Internationalization"
     ]
   },
   {
@@ -1033,7 +1033,6 @@
     "tags": [
       "Historical Survey",
       "Modernism",
-      "Postmodernism",
       "USSR"
     ]
   },
@@ -1462,8 +1461,7 @@
     "abstract": null,
     "url": "https://doi.org/10.1075/chlel.xi.45mak",
     "tags": [
-      "Modernism",
-      "Postmodernism"
+      "Modernism"
     ]
   },
   {
@@ -1498,6 +1496,619 @@
     "tags": [
       "Nationalism",
       "Post-Soviet"
+    ]
+  },
+  {
+    "id": "hayes_2011",
+    "resource_type": "book",
+    "year": 2011,
+    "authors": [
+      {
+        "author_first": "Eric",
+        "author_last": "Hayes"
+      }
+    ],
+    "title": "From Cold War to Common Currency: A personal perspective on Finland and the EU",
+    "container_title": "Finnish Foreign Policy Papers",
+    "publisher": "The Finnish Institute of International Affairs",
+    "place": "Helsinki",
+    "editors": null,
+    "volume": null,
+    "issue": null,
+    "pages": null,
+    "abstract": "The Finnish Institute of International Affairs, which today celebrates its 50th anniversary, has published a treatise on Finland’s integration into the European Union, written by Eric Hayes, a former official of the European Commission.\nMr. Hayes’ text, entitled From Cold War to Common Currency, is a detailed story of how Finland decided to apply for membership in the European Community (later to become the European Union) and what were the main challenges during the accession negotiations. Mixing political history with personal observations, Mr. Hayes paints an elaborate picture of how Finland “came in from the cold.”\nThe publication of Eric Hayes’ work marks the launch of a new publication series by the Finnish Institute of International Affairs, Finnish Foreign Policy Papers. As the name implies, the papers published in this series will concentrate on Finnish foreign policy.",
+    "url": "https://fiia.fi/en/publication/from-cold-war-to-common-currency",
+    "tags": [
+      "Internationalization",
+      "Post-Soviet"
+    ],
+    "raw": "Hayes, Eric. 2011. From Cold War to Common Currency: A personal perspective on Finland and the EU. Finnish Foreign Policy Papers. Helsinki: The Finnish Institute of International Affairs. https://fiia.fi/en/publication/from-cold-war-to-common-currency."
+  },
+  {
+    "id": "taju_2025",
+    "resource_type": "website",
+    "year": 2025,
+    "authors": [],
+    "title": "Taju: Open-access publication archive",
+    "container_title": "Open-access publication archive",
+    "publisher": "University of the Arts Helsinki",
+    "place": "Helsinki",
+    "abstract": "Taju is the University of the Arts Helsinki's open access publication archive. The archive stores full-text material produced at the University of the Arts Helsinki, such as dissertations, theses, artistic research, parallel recordings of scientific articles, publication series, educational materials, and digitized sheet music, recordings, and concert recordings. Some of the material is freely available (Open Access) and some is only available on the library's Taju workstations. Some of the material is also available with University of the Arts Helsinki credentials.\n\nSuggested search: “Sävellys ja musiikinteoria” for a periodical from the Sibelius Academy's Department of Theory and Composition",
+    "url": "https://taju.uniarts.fi/home",
+    "raw": "Taju. nd. Helsinki: University of the Arts. https://taju.uniarts.fi/home.",
+    "tags": [
+      "Historical Survey"
+    ]
+  },
+  {
+    "id": "heinonen_peltonen_2013",
+    "resource_type": "book",
+    "year": 2013,
+    "authors": [
+      {
+        "author_first": "Visa",
+        "author_last": "Heinonen"
+      },
+      {
+        "author_first": "Matti",
+        "author_last": "Peltonen, eds."
+      }
+    ],
+    "title": "Finnish Consumption: An Emerging Consumer Society between East and West",
+    "publisher": "Finnish Literature Society",
+    "place": "Helsinki",
+    "abstract": "Finnish Consumption focuses on Finland as a modernising society between East and West. Comprehensive agrarian heritage and delayed modernisation in the sense of structural change, industrialisation and urbanisation are the central features of Finnish society during the 20th century. The special characteristics in this transformation were manifold influences from both Western Europe and SovietUnion / Russia. Although Finnish consumers eagerly adopted television and private cars, they also kept their saunas, summer houses and fishing as their favorite hobby.",
+    "url": "https://researchportal.helsinki.fi/en/publications/finnish-consumption-an-emerging-consumer-society-between-east-and/",
+    "raw": "Heinonen, Visa, and Matti Peltonen, eds. 2013. Finnish Consumption: An Emerging Consumer Society between East and West. Helsinki: Finnish Literature Society.https://researchportal.helsinki.fi/en/publications/finnish-consumption-an-emerging-consumer-society-between-east-and/.",
+    "tags": [
+      "Internationalization",
+      "Modernism",
+      "Cultural Diplomacy"
+    ]
+  },
+  {
+    "id": "herrala_2014",
+    "resource_type": "article",
+    "year": 2014,
+    "authors": [
+      {
+        "author_first": "Meri Elisabet",
+        "author_last": "Herrala"
+      }
+    ],
+    "title": "Post-War Friendship Between Neighbors: An Outline of Soviet-Finnish Music Exchanges from 1944 Towards the Collapse of the Soviet Union",
+    "container_title": "The Romanian Journal for Baltic and Nordic Studies",
+    "volume": "6",
+    "issue": "2",
+    "pages": "27–51",
+    "abstract": "In this article, I will analyze the role of music in the process of building peaceful relations between the Soviet Union and the Republic of Finland after the Second World War. The role of music as a weapon of “soft power” was an important alternative in Finnish-Soviet relations in order to enhance understanding between them and to avoid further conflict. I will analyze how the leading Soviet soloists were often first “tested” in Finland before their further outreach to the West from 1944 to the collapse of the Soviet Union. Because of its position as a neutral country between the East and the West Finland was seen as a safe experimental location in which to evaluate the performers’ loyalties to the Soviet regime. However, violinist Victoria Mullova’s 1983 defection to the West via Finland showed that the Soviet power was not so overpowering any more, even towards its own citizens. The Soviet Union was already heading for a collapse due to political and economic realities. Its diminishing cultural influence on the West undermined its power, and accelerated its demise. Using primary source materials and newspapers mainly from the Finnish National Archives and Sibelius Museum as well as the former Soviet archives in Moscow, I will examine the ways in which Soviet government cooperated with Finnish non-governmental organizations such as the Finland-Soviet Union Friendship Society, the main coordinating body of Finnish-Soviet relations, Finnish concert firms etc.",
+    "url": "http://hdl.handle.net/10138/187589",
+    "raw": "Herrala, Meri Elisabet. 2014. “Post-War Friendship Between Neighbors: An Outline of Soviet-Finnish Music Exchanges from 1944 Towards the Collapse of the Soviet Union.” The Romanian Journal for Baltic and Nordic Studies 6 (2): 27–51. http://hdl.handle.net/10138/187589.",
+    "tags": [
+      "Cultural Diplomacy",
+      "USSR"
+    ]
+  },
+  {
+    "id": "hill_2005",
+    "resource_type": "chapter",
+    "year": 2005,
+    "authors": [
+      {
+        "author_first": "Juniper Lynn",
+        "author_last": "Hill"
+      }
+    ],
+    "title": "From Ancient to Avant-Garde to Global: Creative Processes and Institutionalization in Finnish Contemporary Folk Music",
+    "publisher": "PhD diss., University of California, Los Angeles",
+    "abstract": "This dissertation provides an ethnographic account of the history, ideology, teaching methods, and current performance practices and creative processes of Finnish contemporary folk music, an urban, professional music using traditional Finnish folk music as a point of departure for contemporary, individualistic creations. It focuses primarily on the Folk Music Department of the Sibelius Academy music conservatory in Helsinki, where the genre was created and where its most important practitioners have studied or currently teach and work. Finnish contemporary folk music serves as a case study and jumping-off point for theoretical discussions of five larger socio-musicalissues: 1) the institutionalization of musicians’ training in traditional musics; 2) the construction of legitimacy, authenticity, and historical continuity in revived and recontextualized musics; 3) the ideology, pedagogy, and methods for teaching creativity; 4) how the authority to be musical and specifically to be creative in music is created and allocated; and 5) the expression and reification of transnational relationships through musical fusions and appropriations. The Folk Music Department, influenced by its conservatory environment, has adopted a Western art music ethos of individual artistry while rebelling against its pedagogy and performance practices, which folk musicians perceive as inhibiting creativity. Contemporary folk musicians legitimize their practices by claiming to enter into the same creative process as folk musicians of the past, allowing them to innovate and experiment while maintaining historical continuity and authenticity. Department pedagogues have developed unique teaching methods drawing from historical practices, manipulating aural memory to imitate oral culture, simulating oral composition, and using avant-garde improvisation to develop individuality and personal expression. Their ideology authorizes all (Finnish) musicians to become tradition bearers and innovators, compose, improvise, and arrange, regardless of musical background or skill. Contemporary folk musicians incorporate musical elements from other cultures, reifying their desired relationships with those cultures. The Department wields tremendous power in the dissemination of ideology, causing an increase in creative activities by folk musicians of all ages and skill levels and general knowledge about and respect for folk music.",
+    "url": "https://www.academia.edu/3293413/From_Ancient_to_Avant_Garde_to_Global_Creative_Processes_and_Institutionalization_in_Finnish_Contemporary_Folk_Music",
+    "raw": "Hill, Juniper Lynn. 2005. “From Ancient to Avant-Garde to Global: Creative Processes and Institutionalization in Finnish Contemporary Folk Music.” PhD diss., University of California, Los Angeles. https://www.academia.edu/3293413/From_Ancient_to_Avant_Garde_to_Global_Creative_Processes_and_Institutionalization_in_Finnish_Contemporary_Folk_Music",
+    "tags": [
+      "Indigenous Music",
+      "Internationalization"
+    ]
+  },
+  {
+    "id": "jensen_eriksen_2019",
+    "resource_type": "article",
+    "year": 2019,
+    "authors": [
+      {
+        "author_first": "Niklas",
+        "author_last": "Jensen-Ericsen"
+      }
+    ],
+    "title": "The Northern Front in the Technological Cold War",
+    "container_title": "Journal of Cold War Studies",
+    "volume": "21",
+    "issue": "4",
+    "pages": "150–74",
+    "abstract": "This article shows how the United States and the Soviet Union competed technologically in northern Europe during the final decades of the Cold War. The article highlights the U.S. government’s ability to enlist neutral countries, and even vulnerable neutral states like Finland, into Western technology embargoes against the Soviet Union. Yet, the Finnish case also demonstrates that determined small countries and their companies were not simply helpless actors and could protect their political and commercial interests. Finland exported high-technology goods such as electronics and telecommunications equipment to the Soviet Union, even though Finland itself was dependent on technology flows from the United States. In fact, the Finns managed to get the best of both worlds: their country was an important player in East-West trade, but at the same time it was able to modernize its economy and strengthen trading links with the U.S.-led Western alliance.",
+    "url": "https://www.jstor.org/stable/10.2307/26924706",
+    "raw": "Jensen-Ericsen, Niklas. 2019. “The Northern Front in the Technological Cold War.” Journal of Cold War Studies 21 (4): 150–74. https://www.jstor.org/stable/10.2307/26924706",
+    "tags": [
+      "Internationalization",
+      "Neutrality",
+      "USA",
+      "USSR"
+    ]
+  },
+  {
+    "id": "karryla_2024",
+    "resource_type": "article",
+    "year": 2024,
+    "authors": [
+      {
+        "author_first": "Ilkka",
+        "author_last": "Kärrylä"
+      }
+    ],
+    "title": "Ideological and pragmatic transformations: The adoption of neoliberal ideas by Finnish and Swedish conservative parties since the 1970s",
+    "container_title": "Scandinavian Journal of History",
+    "volume": "49",
+    "issue": "1",
+    "pages": "114–40",
+    "abstract": "The article examines the extent to which Finnish and Swedish conservative parties adopted neoliberal ideas from the 1970s onwards. It does so by comparing their published programmes and contextualizing them politically and economically. Neoliberalism is understood as an intellectual tradition centred around the objective of increasing the role of the market mechanism in society. Concrete neoliberal programmatic ideas include critiques of the public sector and taxes, especially progressive taxation, and promoting the marketization of the public sector and liberalization of other sectors of society, such as finance and labour markets. The article shows that Swedish conservatives adopted neoliberal ideas considerably earlier than their Finnish counterparts and were more ideological in pursuing them. Both parties have traditionally called for tax cuts, but only Swedish conservatives called for a deregulation of financial markets and marketization of public services already in the late 1970s. The neoliberal ‘breakthrough’ only took place among Finnish conservatives in the 1990s, though they justified most reforms as pragmatic necessities rather than desirable from an ideological standpoint. These differences are explained especially by Finland’s different geopolitical position during the Cold War and its tradition of shifting coalition governments, which led to milder ideological contestation than in Swedish bloc politics.",
+    "url": "https://doi.org/10.1080/03468755.2023.2230209",
+    "raw": "Kärrylä, Ilkka. “Ideological and pragmatic transformations: The adoption of neoliberal ideas by Finnish and Swedish conservative parties since the 1970s.” Scandinavian Journal of History 49 (1): 114–40. https://doi.org/10.1080/03468755.2023.2230209.",
+    "tags": [
+      "Internationalization"
+    ]
+  },
+  {
+    "id": "kettunen_2001",
+    "resource_type": "article",
+    "year": 2001,
+    "authors": [
+      {
+        "author_first": "Pauli",
+        "author_last": "Kettunen"
+      }
+    ],
+    "title": "The Nordic Welfare State in Finland",
+    "container_title": "Scandinavian Journal of History",
+    "volume": "26",
+    "issue": "3",
+    "pages": "225–47",
+    "url": "https://doi.org/10.1080/034687501750303864",
+    "raw": "Kettunen, Pauli. 2001. “The Nordic Welfare State in Finland.” Scandinavian Journal of History 26 (3): 225–47. https://doi.org/10.1080/034687501750303864.",
+    "tags": [
+      "Internationalization"
+    ]
+  },
+  {
+    "id": "kivimaki_2012",
+    "resource_type": "article",
+    "year": 2012,
+    "authors": [
+      {
+        "author_first": "Ville",
+        "author_last": "Kivimäki"
+      }
+    ],
+    "title": "Between Defeat and Victory: Finnish memory culture of the Second World War",
+    "container_title": "Scandinavian Journal of History",
+    "volume": "37",
+    "issue": "4",
+    "pages": "482–504",
+    "url": "https://doi.org/10.1080/03468755.2012.680178",
+    "raw": "Kivimäki, Ville. 2012. “Between Defeat and Victory: Finnish memory culture of the Second World War.” Scandinavian Journal of History 37 (4): 482–504. https://doi.org/10.1080/03468755.2012.680178",
+    "abstract": "The article focuses on five essential phenomena in the Finnish memory culture relating to the three Finnish wars fought in 1939–1945, namely, (1) the memory of the fallen; (2) the influential work by author Väinö Linna; (3) the contested memory politics and veteran cultures in the 1960s and 1970s; (4) Germany and the Holocaust in the Finnish memory culture; and (5) the ‘neo-patriotic’ turn in the commemoration of the wars from the end of the 1980s onwards. The Finnish memory culture of 1939–1945 presents an interesting case of how the de facto lost wars against the Soviet Union have been shaped into cornerstones of national history and identity that continue to play a significant role even today. Using the growing research literature on the various aspects of the Finnish war memories and memory politics, the article aims, first, at outlining a synthesis of the memory culture's central features and, second, at challenging the common contemporary conception, according to which the Finnish war veterans would have been forgotten, neglected and even disgraced during the post-war decades, to be ‘rehabilitated’ only from the end of the 1980s onwards.",
+    "tags": [
+      "Neutrality",
+      "USSR"
+    ]
+  },
+  {
+    "id": "kochetkova_2018",
+    "resource_type": "article",
+    "year": 2018,
+    "authors": [
+      {
+        "author_first": "Elena",
+        "author_last": "Kochetkova"
+      }
+    ],
+    "title": "‘A Shop Window Where You Can Choose the Goods You Like’: Finnish industrial and trade fairs in the USSR, 1950s–1960s",
+    "container_title": "Scandinavian Journal of History",
+    "volume": "43",
+    "issue": "2",
+    "pages": "212–32",
+    "url": "https://doi.org/10.1080/03468755.2018.1430651",
+    "raw": "Kochetkova, Elena. 2018 “‘A Shop Window Where You Can Choose the Goods You Like’: Finnish industrial and trade fairs in the USSR, 1950s–1960s.” Scandinavian Journal of History 43 (2): 212–32. https://doi.org/10.1080/03468755.2018.1430651.",
+    "abstract": "This article examines the Finnish industrial and trade fairs held in the Soviet Union in the context of Finnish–Soviet trade and scientific–technical cooperation in the 1950s and 1960s. While primarily focused on fairs, it also discusses different activities that accompanied them, such as lectures, visits, and negotiations between Finnish traders and Soviet officials and specialists. This study illustrates how such first-hand contact played an important role in Finnish–Soviet communications. First, they helped Finnish producers showcase their goods and technologies directly to Soviet buyers in various ministries and organizations. Second, these contacts included diverse activities such as face-to-face contacts, lectures, and seminars, being a means of technology transfer from Finland to the USSR . Finally, although they were commercial interactions without explicit ideological purposes – like many international exhibitions of the last century – Finnish fairs demonstrated a technological gap between Finland and the USSR.",
+    "tags": [
+      "Cultural Diplomacy",
+      "USSR"
+    ]
+  },
+  {
+    "id": "lindfors_2008",
+    "resource_type": "website",
+    "year": 2008,
+    "authors": [
+      {
+        "author_first": "Jukka",
+        "author_last": "Lindfors"
+      }
+    ],
+    "title": "DIMI, suomalainen syntetisaattori",
+    "title_trans": "DIMI, Finnish synthesizer",
+    "container_title": "Elävä Arkisto, YLE",
+    "publisher": "YLE",
+    "raw": "Lindfors, Jukka. 2008. “DIMI, suomalainen syntetisaattori” (DIMI, Finnish synthesizer). Elävä Arkisto, YLE. Last modified May 2, 2017. https://yle.fi/a/20-89299.",
+    "url": "https://yle.fi/a/20-89299",
+    "tags": [
+      "Electronic Music",
+      "YLE"
+    ]
+  },
+  {
+    "id": "lindfors_2008b",
+    "resource_type": "website",
+    "year": 2008,
+    "authors": [
+      {
+        "author_first": "Jukka",
+        "author_last": "Lindfors"
+      }
+    ],
+    "title": "Tietokoneet sävelsivät tangoa ja soittelivat polkkaa",
+    "title_trans": "Computers composed tango and played polka",
+    "container_title": "Elävä Arkisto, YLE",
+    "publisher": "YLE",
+    "raw": "Lindfors, Jukka. 2008. “Tietokoneet sävelsivät tangoa ja soittelivat polkkaa” (Computers composed tango and played polka). Elävä Arkisto, YLE. Last modified September 28, 2016. https://yle.fi/a/20-89301.",
+    "url": "https://yle.fi/a/20-89301",
+    "tags": [
+      "Electronic Music",
+      "YLE"
+    ]
+  },
+  {
+    "id": "makela_1999",
+    "resource_type": "book",
+    "year": 1999,
+    "authors": [
+      {
+        "author_first": "Tomi",
+        "author_last": "Mäkelä"
+      }
+    ],
+    "title": "Topics, Texts, Tensions: Essays in Music Theory on Paavo Heininen, Joonas Kokkonen, Magnus Lindberg, Usko Meriläinen, Einojuhani Rautavaara, Kaija Saariaho, and Aulis Sallinen",
+    "place": "Magdeburg",
+    "publisher": "Otto-von-Guericke-Universität",
+    "raw": "Mäkelä, Tomi. 1999. Topics, Texts, Tensions: Essays in Music Theory on Paavo Heininen, Joonas Kokkonen, Magnus Lindberg, Usko Meriläinen, Einojuhani Rautavaara, Kaija Saariaho, and Aulis Sallinen. Magdeburg: Otto-von-Guericke-Universität.",
+    "tags": [
+      "Avant-Garde",
+      "Modernism"
+    ]
+  },
+  {
+    "id": "valkonen_1994",
+    "resource_type": "chapter",
+    "year": 1994,
+    "authors": [
+      {
+        "author_first": "Kaija",
+        "author_last": "Valkonen"
+      },
+      {
+        "author_first": "Markku",
+        "author_last": "Valkonen"
+      }
+    ],
+    "title": "Festival Fever – A short history of FInnish festivals from the early ages till 1990s",
+    "publisher": "Finland Festivals",
+    "editors": "Kai Amberla and Minna Salonranta",
+    "url": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://festivals.fi/wp-content/uploads/2021/10/Festivals_historia_EN.pdf&ved=2ahUKEwjm24GPqM2RAxXayMkDHTp2AFEQFnoECBkQAQ&usg=AOvVaw3sI7cgSnpl9B2HUHfrbosU",
+    "raw": "Valkonen, Kaija, and Markku Valkonen. 1994. “Festival Fever – A short history of FInnish festivals from the early ages till 1990s.” Finland Festivals. Edited by Kai Amberla and Minna Salonranta. https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://festivals.fi/wp-content/uploads/2021/10/Festivals_historia_EN.pdf&ved=2ahUKEwjm24GPqM2RAxXayMkDHTp2AFEQFnoECBkQAQ&usg=AOvVaw3sI7cgSnpl9B2HUHfrbosU.",
+    "tags": [
+      "Festivals",
+      "Internationalization",
+      "Modernism"
+    ]
+  },
+  {
+    "id": "stark_2021",
+    "resource_type": "article",
+    "year": 2021,
+    "authors": [
+      {
+        "author_first": "Eija",
+        "author_last": "Stark"
+      }
+    ],
+    "title": "Was Folklore Studies Finlandized? Changing Scholarly Trends in Finnish Folklore Studies in the Cold War",
+    "container_title": "Cultural Analysis",
+    "volume": "19",
+    "issue": "2",
+    "pages": "58–78",
+    "url": "https://www.ocf.berkeley.edu/~culturalanalysis/volume19_2/vol19_2_4_Stark.html",
+    "raw": "Stark, Eija. 2021. “Was Folklore Studies Finlandized? Changing Scholarly Trends in Finnish Folklore Studies in the Cold War.” Cultural Analysis 19 (2): 58–78. https://www.ocf.berkeley.edu/~culturalanalysis/volume19_2/vol19_2_4_Stark.html.",
+    "abstract": "This paper examines the impact of the Cold War on Finnish folklore studies as an academic discipline. Drawing on the university curricula of folklore studies at the University of Helsinki, the article seeks to trace disciplinary shifts from 1943 to 1979. The era coincided with a period of Finlandization—that is, a political culture subservient to the Soviet Union. The research strategies that the leading folklorists took continued concentrating on ethno-historically important Finnish- or Swedish-speaking oral traditions. International orientation consisted of balancing between the East and West scholarship. Among the academics, Finlandization often meant simply ignoring topics that dealt with the USSR.",
+    "tags": [
+      "Folk Music",
+      "Neutrality"
+    ]
+  },
+  {
+    "id": "rentola_2012",
+    "resource_type": "article",
+    "year": 2012,
+    "authors": [
+      {
+        "author_first": "Kimmo",
+        "author_last": "Rentola"
+      }
+    ],
+    "title": "Great Britain and the Soviet Threat in Finland, 1944–1951",
+    "container_title": "Scandinavian Journal of History",
+    "volume": "37",
+    "issue": "2",
+    "pages": "171–84",
+    "url": "https://doi.org/10.1080/03468755.2012.668008",
+    "raw": "Rentola, Kimmo. 2012. “Great Britain and the Soviet Threat in Finland, 1944–1951.” Scandinavian Journal of History 37 (2): 171–84. https://doi.org/10.1080/03468755.2012.668008.",
+    "abstract": "The publication of a documentary collection on British policy towards the Nordic countries from 1944 to 1951 is a good occasion to ponder how and to what extent history is, or can be, rewritten on the basis of new documentary evidence, and in what directions the historiography of the early Cold War seems to be heading at present. To illustrate these issues, some key aspects of British policy towards Finland are addressed, in particular those connected with the distinct change of attitude from 1944, when Finland was self-evidently left in the Soviet sphere of influence, to the late 1940s, when the British gradually saw the chance and the utility of countering Soviet efforts in Finland. Repetition of every familiar issue along the well-trodden path of scholarship on the late 1940s is not deemed necessary here. Particular attention is paid to the need for multi-archival research. The necessity and the utility of well-informed multi-archival commentary on even the best single-archive documentary examination is demonstrated, and the consequences for future research discussed.",
+    "tags": [
+      "Cultural Diplomacy",
+      "Neutrality"
+    ]
+  },
+  {
+    "id": "peltonen_2012",
+    "resource_type": "article",
+    "year": 2000,
+    "authors": [
+      {
+        "author_first": "Matti",
+        "author_last": "Peltonen"
+      }
+    ],
+    "title": "Between Landscape and Language: The Finnish National Self-image in Transition",
+    "container_title": "Scandinavian Journal of History",
+    "volume": "25",
+    "issue": "4",
+    "pages": "265–80",
+    "url": "https://doi.org/10.1080/034687500750046924",
+    "raw": "Peltonen, Matti. 2000. “Between Landscape and Language: The Finnish National Self-image in Transition.” Scandinavian Journal of History 25 (4): 265–80. https://doi.org/10.1080/034687500750046924.",
+    "tags": [
+      "Nationalism"
+    ]
+  },
+  {
+    "id": "pajala_2017",
+    "resource_type": "article",
+    "year": 2017,
+    "authors": [
+      {
+        "author_first": "Mari",
+        "author_last": "Pajala"
+      }
+    ],
+    "title": "‘Long live the friendship between the Soviet Union and Finland!’ Irony, nostalgia, and melodrama in Finnish historical television drama and documentary series",
+    "container_title": "European Journal of Cultural Studies",
+    "volume": "20",
+    "issue": "3",
+    "pages": "271–84",
+    "url": "https://doi.org/10.1177/1367549416682244",
+    "abstract": "In critical studies on historical television programmes, the affective qualities of televisual memory have been discussed mainly in terms of nostalgia. This article argues that conceptualizing the affective modes of relating to the past in more varied ways can help us to better understand the politics of memory on television. As a case study, the article analyses Finnish Broadcasting Company Yleisradio’s historical drama and documentary series that deal with the relationship between Finland and the Soviet Union. The article identifies three affective modes in the programmes: irony, nostalgia and melodrama. Each of these modes offers different possibilities for critiquing, understanding and justifying the past. By studying televisual memories of the Soviet Union in a non-socialist country with important political, economic and cultural ties with the socialist bloc, the article moreover questions a clear East–West binary in studies on post-socialist memory. https://doi.org/10.1177/1367549416682244.",
+    "raw": "Pajala, Mari. 2017. “‘Long live the friendship between the Soviet Union and Finland!’ Irony, nostalgia, and melodrama in Finnish historical television drama and documentary series.” European Journal of Cultural Studies 20 (3): 271–84. https://doi.org/10.1177/1367549416682244.",
+    "tags": [
+      "Neutrality",
+      "USSR",
+      "YLE"
+    ]
+  },
+  {
+    "id": "outinen_2017",
+    "resource_type": "article",
+    "year": 2017,
+    "authors": [
+      {
+        "author_first": "Sami",
+        "author_last": "Outinen"
+      }
+    ],
+    "title": "From Steering Capitalism to Seeking Market Acceptance",
+    "container_title": "Scandinavian Journal of History",
+    "volume": "42",
+    "issue": "4",
+    "pages": "398–413",
+    "url": "https://doi.org/10.1080/03468755.2017.1336599",
+    "abstract": "This article puts into a historical context the employment conceptions and policies of leading Social Democrats in Finland from 1975 to 1998. It takes into account both the strategic decision-making and public argumentation of the Social Democrats in employment-sensitive issues related to economic, employment, labour market, state company, competition, globalization and integration policies.\n\nFinland’s Social Democrats moved towards emphasizing private sector-led employment, approached the middle classes, adopted monetarist ideas, accepted the ‘market economy’ and favoured ‘controlled restructuring’ over counter-cyclical measures in a series of steps in 1975–1998. The deregulation of financial markets meant a shifting of the basis of Social Democratic employment policy from steering the capitalist economy to seeking market acceptance of the party’s politics. This did not manage to guarantee full employment in Finland during the period.\n\nFurthermore, Finland’s Social Democrats seemed initially to practise a ‘third way’ type of ‘Bad Sillanpää’ policy long before its adherents in the UK. such as Tony Blair. After the mid-1970s, the Finnish Social Democrat-led governments no longer imitated Sweden, while implementing many reforms which were followed by the Swedish Social Democrats.",
+    "raw": "Outinen, Sami. 2017. “From Steering Capitalism to Seeking Market Acceptance.” Scandinavian Journal of History 42 (4): 398–413. https://doi.org/10.1080/03468755.2017.1336599.",
+    "tags": [
+      "Internationalization"
+    ]
+  },
+  {
+    "id": "mellais_2013",
+    "resource_type": "book",
+    "year": 2013,
+    "authors": [
+      {
+        "author_first": "Maritta",
+        "author_last": "Mellais, ed."
+      }
+    ],
+    "title": "Erkki Kurenniemi: A man from the future",
+    "publisher": "Finnish National Gallery, Central Art Archives",
+    "place": "Helsinki",
+    "url": "http://www.lahteilla.fi/kurenniemi/en/content/erkki-kurenniemi-–-man-future",
+    "abstract": "Erkki Kurenniemi – A Man from the Future is a collection of research articles about Erkki Kurenniemi. The researchers study Kurenniemi’s person, career and activities from diverse perspectives. The themes of the publication range from media archaeology, musicology and instrument construction to critical discussions of Kurenniemi’s visions and careful media analysis.",
+    "raw": "Mellais, Maritta, ed. 2013. Erkki Kurenniemi: A man from the future. Helsinki: Finnish National Gallery, Central Art Archives. http://www.lahteilla.fi/kurenniemi/en/content/erkki-kurenniemi-–-man-future.",
+    "tags": [
+      "Avant-Garde",
+      "Electronic Music"
+    ]
+  },
+  {
+    "id": "nilsson_2019",
+    "resource_type": "article",
+    "year": 2019,
+    "authors": [
+      {
+        "author_first": "Mikael",
+        "author_last": "Nilsson"
+      }
+    ],
+    "title": "The United States and Neutral Countries in Europe, 1945–1991",
+    "container_title": "Journal of Cold War Studies",
+    "volume": "21",
+    "issue": "4",
+    "pages": "208–30",
+    "url": "https://www.jstor.org/stable/26924708",
+    "abstract": "The post-Cold War era has led to a proliferation of scholarship on U.S. policy toward four neutral European countries—Austria, Finland, Switzerland, and Sweden—during the Cold War. This article provides a survey of the latest literature on U.S. policy toward these four countries as well as general comments about the U.S. government’s approach to European neutrality from 1945 to 1991.",
+    "raw": "Nilsson, Mikael. 2019. “The United States and Neutral Countries in Europe, 1945–1991.” Journal of Cold War Studies 21 (4): 208–30. https://www.jstor.org/stable/26924708.",
+    "tags": [
+      "Neutraliy",
+      "USA"
+    ]
+  },
+  {
+    "id": "mikkonen_koivunen_2019",
+    "resource_type": "chapter",
+    "year": 2019,
+    "authors": [
+      {
+        "author_first": "Simo",
+        "author_last": "Mikkonen"
+      },
+      {
+        "author_first": "Pia",
+        "author_last": "Koivunen, eds."
+      }
+    ],
+    "title": "Beyond the Divide: Entangled Histories of Cold War Europe",
+    "publisher": "Berghahn Books",
+    "place": "New York",
+    "url": "https://dokumen.pub/beyond-the-divide-entangled-histories-of-cold-war-europe-9781782388678.html",
+    "abstract": "Cold War history has emphasized the division of Europe into two warring camps with separate ideologies and little in common. This volume presents an alternative perspective by suggesting that there were transnational networks bridging the gap and connecting like-minded people on both sides of the divide. Long before the fall of the Berlin Wall, there were institutions, organizations, and individuals who brought people from the East and the West together, joined by shared professions, ideas, and sometimes even through marriage. The volume aims at proving that the post-WWII histories of Western and Eastern Europe were entangled by looking at cases involving France, Denmark, Poland, Romania, Switzerland, and others.",
+    "raw": "Mikkonen, Simo, and Pia Koivunen, eds. 2019. Beyond the Divide: Entangled Histories of Cold War Europe. New York: Berghahn Books. https://dokumen.pub/beyond-the-divide-entangled-histories-of-cold-war-europe-9781782388678.html.",
+    "tags": [
+      "Cultural Diplomacy",
+      "USA",
+      "USSR"
+    ]
+  },
+  {
+    "id": "makela_2008",
+    "resource_type": "article",
+    "year": 2008,
+    "authors": [
+      {
+        "author_first": "Janne",
+        "author_last": "Mäkelä"
+      }
+    ],
+    "title": "The State of Rock: A History of Finland's Cultural Policy and Music Export",
+    "container_title": "Popular Music",
+    "volume": "27",
+    "issue": "2",
+    "pages": "257–69",
+    "url": "https://www.jstor.org/stable/40212378",
+    "abstract": "The Finnish government has historically been active in regulating the practices of popular music. At the same time, the music industry, rock media and musicians have traditionally insisted on markets free from state intervention. This article focuses on the history of the interrelationship between cultural policy and popular music, especially rock exports, in Finland. It argues that the high level of organised forms of culture and the lure of internationalism form the historical basis for the nation-state-popular music relationship in Finland. Following the demands for 'competitive society' in the 1990s and the international breakthroughs of Finnish pop and rock music performers after 2000, this relationship has intensified. Contemporary policy is in many ways healthier than in the past, yet it also raises crucial questions about hierarchies and identity relationships in popular music and society.",
+    "raw": "Mäkelä, Janne. 2008. “The State of Rock: A History of Finland's Cultural Policy and Music Export.” Popular Music 27 (2): 257–69. https://www.jstor.org/stable/40212378.",
+    "tags": [
+      "Cultural Diplomacy",
+      "Popular Music"
+    ]
+  },
+  {
+    "id": "laine_1993",
+    "resource_type": "chapter",
+    "year": 1993,
+    "authors": [
+      {
+        "author_first": "Pauli",
+        "author_last": "Laine"
+      }
+    ],
+    "title": "Sibelius Academy Computer Music Studio",
+    "container_title": "International Computer Music Proceedings 1993",
+    "pages": "302–5",
+    "url": "http://hdl.handle.net/2027/spo.bbp2372.1993.062",
+    "abstract": "In this paper I shall describe the Sibelius Academy Computer Music Studio. The studio is has been recently set-up and furnished with modern equipment. The studio, together with the small concert hall associated with it which has special facilities for electroacoustic music performance, offer a good working environment for computer music teaching and research.",
+    "raw": "Laine, Pauli. 1993. “Sibelius Academy Computer Music Studio.” International Computer Music Conference Proceedings 1993: 302–5. http://hdl.handle.net/2027/spo.bbp2372.1993.062.",
+    "tags": [
+      "Electronic Music"
+    ]
+  },
+  {
+    "id": "kuldkepp_piirimae_aunesluoma_2022",
+    "resource_type": "article",
+    "year": 2022,
+    "authors": [
+      {
+        "author_first": "Mart",
+        "author_last": "Kuldkepp"
+      },
+      {
+        "author_first": "Kaarel",
+        "author_last": "Piirimäe"
+      },
+      {
+        "author_first": "Juhana",
+        "author_last": "Aunesluoa"
+      }
+    ],
+    "title": "Baltic crisis: Nordic and Baltic countries during the end stage of the Cold War",
+    "container_title": "Scandinavian Journal of History",
+    "volume": "47",
+    "issue": "3",
+    "pages": "271–79",
+    "url": "https://doi.org/10.1080/03468755.2022.2025896",
+    "abstract": "The end of the Cold War was in many ways a formative moment in recent European and global history, but it also had important regional and interregional ramifications. Not least from the Baltic and Nordic perspectives, the events in 1987–1992 marked the definite end of an era, and the beginning of another. As relevant sources from these years have increasingly become available, a research community has emerged to investigate the complexities of international politics in the Baltic-Nordic space during the last years of the Soviet Union and the immediate aftermath of its collapse. This special issue on Nordic and Baltic countries during the end stage of the Cold War is dedicated to furthering research on transnational Nordic-Baltic contacts and perceptions in this period.",
+    "raw": "Kuldkepp, Mart, Kaarel Piirimäe, and Juhana Aunesluoa. 2022. “Baltic crisis: Nordic and Baltic countries during the end stage of the Cold War.” Scandinavian Journal of History 47 (3): 271–79. https://doi.org/10.1080/03468755.2022.2025896.",
+    "tags": [
+      "Post-Soviet"
+    ]
+  },
+  {
+    "id": "kolbe_2008",
+    "resource_type": "article",
+    "year": 2008,
+    "authors": [
+      {
+        "author_first": "Laura",
+        "author_last": "Kolbe"
+      }
+    ],
+    "title": "From Memory to History: Year 1968 in Finland",
+    "container_title": "Scandinavian Journal of History",
+    "volume": "33",
+    "issue": "4",
+    "pages": "366–81",
+    "url": "https://doi.org/10.1080/03468750802472505",
+    "abstract": "As in other Scandinavian countries, in Finland the year 1968 has become a significant memory place, still influencing the current political debate. The first part of the article discusses how the 1960s started in Finland already during the 1950s when matters like internationalism and the Third World, pacifism, party‐political activities, women's issues, critical attitudes towards the church and the army etc. had already begun to affect the general opinion. The student movement in Finland was an essential part of the modernisation process with clear aims and cultural and political consequences. The students became main bearers of radically different vision of society, crucial years being 1964–68. The movement culminated in the occupation of Old Student's House in Helsinki in November 1968. The second part of the article discusses the development of Finnish historiography, as seen in the context of 1968.",
+    "raw": "Kolbe, Laura. 2008. “From Memory to History: Year 1968 in Finland.” Scandinavian Journal of History 33 (4): 366–81. https://doi.org/10.1080/03468750802472505.",
+    "tags": [
+      "Internationalization",
+      "Modernism"
+    ]
+  },
+  {
+    "id": "kohvakka_2011",
+    "resource_type": "article",
+    "year": 2011,
+    "authors": [
+      {
+        "author_first": "Mikko",
+        "author_last": "Kohvakka"
+      }
+    ],
+    "title": "Science, Technology, and Changing Power Relations: The negotiation process of the agreement on Finnish-Soviet Scientific-Technical Cooperation, 1955",
+    "container_title": "Scandinavian Journal of History",
+    "volume": "36",
+    "issue": "3",
+    "pages": "349–70",
+    "url": "https://doi.org/10.1080/03468755.2011.583412",
+    "abstract": "Finland and the Soviet Union signed the Agreement on Finnish-Soviet Scientific-Technical Cooperation, the so-called TT-agreement, in 1955. Previous research has emphasized the viewpoint that the agreement was part of a new ‘softer’ strategy of the Soviet Union, the aim of which was to entangle Finland scientifically and technologically in the Soviet sphere of influence, and that anti-communist Finns formed a unanimous front against this inconvenient initiative. This article illustrates that adopting a different perspective makes possible an interpretation which indicates that the negotiation process for the agreement was less straightforward. Throughout the negotiations it is possible to observe the key issues of centralization and decentralization as well as the question of the status of science and technology policy in Finnish society. In essence, the TT-agreement was about determination of power relations and dominion not only between Finland and the Soviet Union but also between different interest groups inside Finland.",
+    "raw": "Kohvakka, Mikko. 2011. “Science, Technology, and Changing Power Relations: The negotiation process of the agreement on Finnish-Soviet Scientific-Technical Cooperation, 1955.” Scandinavian Journal of History 36 (3): 349–70. https://doi.org/10.1080/03468755.2011.583412.",
+    "tags": [
+      "Neutrality",
+      "USSR"
     ]
   }
 ]
