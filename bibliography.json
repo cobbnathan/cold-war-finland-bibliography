@@ -2110,5 +2110,27 @@
       "Neutrality",
       "USSR"
     ]
+  },
+  {
+    "id": "mikkonen_2025",
+    "resource_type": "book",
+    "year": 2025,
+    "authors": [
+      {
+        "author_first": "Simo",
+        "author_last": "Mikkonen"
+      }
+    ],
+    "title": "Äänirautaa rajalle: Musiikki, Suomi ja Neuvostoliitto 1960–1985",
+    "title_trans": "Sounding the Border: Music, Finland and the Soviet Union 1960–1985",
+    "publisher": "Finnish Literature Society",
+    "place": "Helsinki",
+    "url": "https://library.oapen.org/handle/20.500.12657/57878",
+    "abstract": "During the Cold War, more musicians from the Soviet Union visited Finland than from any other Western country. Why did the world's best artists come to perform in Finland? And how did Finnish musical visits to the Soviet Union go?\n\nSounding the Border explores the relations between Finland and the Soviet Union through cultural exchange, and especially music. The book examines the artists' visits and the formation of networks, as well as the effects of exchange activities. The detailed and comprehensive information in the book has been collected through years of archival work in Russia, Estonia, Latvia and Finland, as well as by interviewing numerous artists.\n\nThe book is particularly appealing to those who want to refresh their memories of high-quality concerts by Soviet musicians or studies under the guidance of Soviet music teachers.",
+    "raw": "Mikkonen, Simo. 2025. Äänirautaa rajalle: Musiikki, Suomi ja Neuvostoliitto 1960–1985 (Sounding the Border: Music, Finland and the Soviet Union 1960–1985). Helsinki: Finnish Literature Society.",
+    "tags": [
+      "Cultural Diplomacy",
+      "USSR"
+    ]
   }
 ]
