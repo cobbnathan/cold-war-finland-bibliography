@@ -2155,5 +2155,32 @@
       "Internationalization",
       "USSR"
     ]
+  },
+  {
+    "id": "browning_2007",
+    "resource_type": "article",
+    "year": 2007,
+    "authors": [
+      {
+        "author_first": "Christopher S.",
+        "author_last": "Browning"
+      },
+      {
+        "author_first": "Marko",
+        "author_last": "Lehti"
+      }
+    ],
+    "title": "Beyond East-West: Marginality and National Dignity in Finnish Identity Construction",
+    "container_title": "Nationalities Papers",
+    "volume": "35",
+    "issue": "4",
+    "pages": "691–716",
+    "url": "http://dx.doi.org/10.1080/00905990701475103",
+    "abstract": "Since the end of the Cold War it has become common for Finnish academics and politicians alike to frame debates about Finnish national identity in terms of locating Finland somewhere along a continuum between East and West (e.g., Harle and Moisio 2000). Indeed, for politicians properly locating oneself (and therefore Finland) along this continuum has often been seen as central to the winning and losing of elections. For example, the 1994 referendum on EU membership was largely interpreted precisely as an opportunity to relocate Finland further to the West (Jakobson 1998, 111; Arter 1995). Indeed, the tendency to depict Finnish history in terms of a series of ‘westernising’ moves has been notable, but has also betrayed some of the politicised elements of this view (Browning 2002). However, this framing of Finnish national identity discourse is not only sometimes politicised, but arguably is also too simplified and results in blindness towards other identity narratives that have also been important through Finnish history, and that are also evident (but rarely recognised) today as well. In this article we aim to highlight one of these that we argue has played a key role in locating Finland in the world and in formulating notions of what Finland is about, what historical role and mission it has been understood as destined to play, and what futures for the nation have been conceptualised as possible and as providing a source of subjectivity and national dignity. The focus of this article is therefore on the relationship between Finnish nationalism and ideas of ‘marginality’ through Finnish history.",
+    "raw": "Browning, Christopher S., and Marko Lehti. 2007. “Beyond East–West: Marginality and National Dignity in Finnish Identity Construction.” Nationalities Papers 35 (4): 691–716. http://dx.doi.org/10.1080/00905990701475103.",
+    "tags": [
+      "Internationalization",
+      "USSR"
+    ]
   }
 ]
