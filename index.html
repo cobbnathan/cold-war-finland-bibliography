@@ -543,6 +543,45 @@
     .toast.error {
       background: #8d2a2a;
     }
+
+  /* Chicago citation block */
+  .citation-block {
+    margin-top: 0.75rem;
+    padding: 0.85rem 1.1rem;
+    background: #f0f3fa;
+    border-left: 3px solid #2a4b8d;
+    border-radius: 0 10px 10px 0;
+    font-size: 0.82em;
+    line-height: 1.6;
+    color: #333;
+  }
+
+  .citation-label {
+    font-size: 0.7em;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #2a4b8d;
+    margin-bottom: 0.3rem;
+  }
+
+  .citation-copy-btn {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.25rem 0.65rem;
+    font-size: 0.75em;
+    border-radius: 8px;
+    border: 1px solid #2a4b8d;
+    background: transparent;
+    color: #2a4b8d;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+  }
+
+  .citation-copy-btn:hover {
+    background: #2a4b8d;
+    color: white;
+  }
 </style>
 </head>
 
@@ -931,6 +970,100 @@ function applyFilters() {
   renderEntries(sortEntries(filtered));
 }
 
+/* ---------------- Chicago Citation Builder ---------------- */
+function buildChicagoCitation(entry) {
+  // Helper: format author list Chicago-style
+  // First author: Last, First. Subsequent: First Last.
+  function formatAuthors(authors) {
+    if (!authors || authors.length === 0) return null;
+    if (authors.length === 1) {
+      const a = authors[0];
+      // Strip trailing ", eds." / ", ed." from last name for cleaner handling
+      const last = a.author_last.replace(/,?\s*eds?\.?$/i, '').trim();
+      const isEd = /eds?\.?$/i.test(a.author_last);
+      return `${last}, ${a.author_first}${isEd ? ', ed.' : ''}`;
+    }
+    return authors.map((a, i) => {
+      const last = a.author_last.replace(/,?\s*eds?\.?$/i, '').trim();
+      const isEd = /eds?\.?$/i.test(a.author_last);
+      const edSuffix = isEd ? (i === authors.length - 1 ? ', eds.' : '') : '';
+      if (i === 0) return `${last}, ${a.author_first}${edSuffix}`;
+      return `${a.author_first} ${last}${edSuffix}`;
+    }).join(', ');
+  }
+
+  // Helper: place + publisher string
+  function pubPlace(entry) {
+    const parts = [entry.place, entry.publisher].filter(Boolean);
+    return parts.join(': ');
+  }
+
+  const type = entry.resource_type;
+  const authors = formatAuthors(entry.authors);
+  const year = entry.year || 'n.d.';
+
+  if (type === 'book') {
+    // Chicago author-date book:
+    // Author Last, First. Year. <i>Title</i>. Place: Publisher.
+    let parts = [];
+    if (authors) parts.push(authors + '.');
+    parts.push(year + '.');
+    parts.push(`<em>${entry.title}</em>.`);
+    if (pubPlace(entry)) parts.push(pubPlace(entry) + '.');
+    return parts.join(' ');
+  }
+
+  if (type === 'article') {
+    // Author Last, First. Year. "Title." <i>Journal</i> vol, no. issue (year): pages.
+    let parts = [];
+    if (authors) parts.push(authors + '.');
+    parts.push(year + '.');
+    parts.push(`"${entry.title}."`);
+    if (entry.container_title) {
+      let journalPart = `<em>${entry.container_title}</em>`;
+      const volIssue = [
+        entry.volume ? entry.volume : null,
+        entry.issue ? `no. ${entry.issue}` : null
+      ].filter(Boolean).join(', ');
+      if (volIssue) journalPart += ` ${volIssue}`;
+      if (entry.pages) journalPart += `: ${entry.pages}`;
+      parts.push(journalPart + '.');
+    }
+    return parts.join(' ');
+  }
+
+  if (type === 'chapter') {
+    // Author. Year. "Chapter Title." In <i>Book Title</i>, edited by Editors, pages. Place: Publisher.
+    let parts = [];
+    if (authors) parts.push(authors + '.');
+    parts.push(year + '.');
+    parts.push(`"${entry.title}."`);
+    let inPart = `In <em>${entry.container_title}</em>`;
+    if (entry.editors) inPart += `, edited by ${entry.editors}`;
+    if (entry.pages) inPart += `, ${entry.pages}`;
+    parts.push(inPart + '.');
+    if (pubPlace(entry)) parts.push(pubPlace(entry) + '.');
+    return parts.join(' ');
+  }
+
+  if (type === 'website') {
+    // Author. Year. "Title." <i>Site Name</i>. [Month Day, Year accessed or modified.]
+    let parts = [];
+    if (authors) parts.push(authors + '.');
+    else if (entry.publisher) parts.push(entry.publisher + '.');
+    parts.push(year + '.');
+    parts.push(`"${entry.title}."`);
+    if (entry.container_title && entry.container_title !== entry.publisher) {
+      parts.push(`<em>${entry.container_title}</em>.`);
+    }
+    if (entry.url) parts.push(`<a href="${entry.url}" target="_blank" style="color:#2a4b8d;word-break:break-all;">${entry.url}</a>.`);
+    return parts.join(' ');
+  }
+
+  // Fallback: just return the raw field if type is unknown
+  return entry.raw || null;
+}
+
 /* ---------------- Modal ---------------- */
 function openModal(entry) {
   const modal = document.getElementById('modal');
@@ -978,6 +1111,38 @@ function openModal(entry) {
       window.open(entry.url, '_blank');
     });
     body.appendChild(doiBtn);
+  }
+
+  // Chicago citation block
+  const chicago = buildChicagoCitation(entry);
+  if (chicago) {
+    const citBlock = document.createElement('div');
+    citBlock.className = 'citation-block';
+
+    const label = document.createElement('div');
+    label.className = 'citation-label';
+    label.textContent = 'Chicago Citation';
+    citBlock.appendChild(label);
+
+    const citText = document.createElement('div');
+    citText.className = 'citation-text';
+    citText.innerHTML = chicago;
+    citBlock.appendChild(citText);
+
+    const copyBtn = document.createElement('button');
+    copyBtn.className = 'citation-copy-btn';
+    copyBtn.textContent = 'Copy';
+    copyBtn.addEventListener('click', () => {
+      // Copy plain text (strip HTML tags)
+      const plain = citText.innerText || citText.textContent;
+      navigator.clipboard.writeText(plain).then(() => {
+        copyBtn.textContent = 'Copied!';
+        setTimeout(() => { copyBtn.textContent = 'Copy'; }, 2000);
+      });
+    });
+    citBlock.appendChild(copyBtn);
+
+    body.appendChild(citBlock);
   }
 
   modal.style.display = 'flex';
@@ -1109,7 +1274,7 @@ window.addEventListener('scroll', () => {
 });
 
 // todo:
-// - add "About" page
+// - additional tags: "Memory"
 // - add a page for static links, like to the society for finnish composers
 // - add links to recordings?
 // - format text in modal citation (needs to be rich html field)
