@@ -408,7 +408,6 @@
   word-wrap: break-word;
   overflow-wrap: anywhere;
   white-space: pre-wrap;
-  display: none;
 }
 
 /* Close button */
@@ -1087,21 +1086,14 @@ function openModal(entry) {
     body.appendChild(abstractEl);
   }
 
+  /**
   if (entry.raw) {
     const rawEl = document.createElement('p');
     rawEl.innerHTML = entry.raw;
-    rawEl.classList.add('raw-text');  // <-- new class
+    rawEl.classList.add('raw-text');
     body.appendChild(rawEl);
   }
-
-  if (entry.tags && entry.tags.length) {
-    const tagsEl = document.createElement('div');
-    tagsEl.className = 'tags';
-    tagsEl.innerHTML = entry.tags
-      .map(t => `<span class="tag">${t}</span>`)
-      .join(' ');
-    body.appendChild(tagsEl);
-  }
+   **/
 
   if (entry.url) {
     const doiBtn = document.createElement('button');
@@ -1144,6 +1136,15 @@ function openModal(entry) {
     citBlock.appendChild(copyBtn);
 
     body.appendChild(citBlock);
+  }
+
+  if (entry.tags && entry.tags.length) {
+    const tagsEl = document.createElement('div');
+    tagsEl.className = 'tags';
+    tagsEl.innerHTML = entry.tags
+      .map(t => `<span class="tag">${t}</span>`)
+      .join(' ');
+    body.appendChild(tagsEl);
   }
 
   modal.style.display = 'flex';
