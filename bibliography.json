@@ -2183,5 +2183,26 @@
       "USSR",
       "Post-Soviet"
     ]
+  },
+  {
+    "id": "sutela_2005",
+    "resource_type": "article",
+    "year": 2005,
+    "authors": [
+      {
+        "author_first": "Pekka",
+        "author_last": "Sutela"
+      }
+    ],
+    "title": "Finnish trade with the USSR: Why was it different?",
+    "container_title": "Bank of Finland, BOFIT – Institute for Economies in Transition",
+    "volume": "7",
+    "url": "https://publications.bof.fi/bitstream/handle/10024/44998/118461.pdf",
+    "abstract": "Trade with the USSR accounted for about 15 per cent of Finland's total exports in 1952-1990, peaking at more than a quarter in the early-to-mid 1980s. Such trade is routinely seen to have had a major beneficial impact on the Finnish economy, whether in terms of profitability, diversification or stability. At the same time, trade with the USSR is seen to have had a major negative impact on the economies of the Central European member countries of the CMEA. This paper discusses this paradox, looking at both the institutional arrangements of Finnish – Soviet trade and the available analytical evidence. Much research, however, still remains to be done.",
+    "raw": "Sutela, Pekka. 2005. “Finnish trade with the USSR: Why was it different?.” Finnish National Bank, BOFIT – Institute for Economies in Transition 7. https://publications.bof.fi/bitstream/handle/10024/44998/118461.pdf.",
+    "tags": [
+      "USSR",
+      "Post-Soviet"
+    ]
   }
 ]
