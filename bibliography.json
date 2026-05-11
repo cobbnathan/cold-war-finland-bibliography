@@ -2227,5 +2227,28 @@
       "USSR",
       "Post-Soviet"
     ]
+  },
+  {
+    "id": "mikkonen_2025",
+    "resource_type": "article",
+    "year": 2025,
+    "authors": [
+      {
+        "author_first": "Simo",
+        "author_last": "Mikkonen"
+      }
+    ],
+    "title": "Presenting Soviet Music: Gubaidulina, Schnittke, and Others at the Helsinki Week of New Soviet Music in 1984",
+    "container_title": "Twentieth-Century Music",
+    "volume": "First View",
+    "pages": "1–18",
+    "url": "https://doi.org/10.1017/S1478572225100133",
+    "abstract": "The 1984 Helsinki Festival introduced Finnish and international audiences to contemporary Soviet composers via what was perhaps the largest repertory of contemporary Soviet music in the West up to that point. The week of concerts did not include any premieres, but several works by Schnittke, Gubaidulina, and Denisov that were performed during the festival were recent compositions that had received only a few performances at that point. And yet, the week was also a compromise, prominently featuring Khrennikov and other conservative composers. This article discusses the context and processes that led to the festival’s realisation and its relation to changes in the Soviet musical world at the time. In the past, Soviet authorities often torpedoed attempts to perform nonconformist works in the West and almost never allowed composers to travel. In Helsinki, Schnittke, Gubaidulina, and several other composers were allowed to attend.",
+    "raw": "Mikkonen, Simo. 2025. “Presenting Soviet Music: Gubaidulina, Schnittke, and Others at the Helsinki Week of New Soviet Music in 1984.” Twentieth Century Music First View: 1–18. https://doi.org/10.1017/S1478572225100133.",
+    "tags": [
+      "Cultural Diplomacy",
+      "Festivals",
+      "USSR"
+    ]
   }
 ]
