@@ -2204,5 +2204,28 @@
       "USSR",
       "Post-Soviet"
     ]
+  },
+  {
+    "id": "matala_2023",
+    "resource_type": "article",
+    "year": 2023,
+    "authors": [
+      {
+        "author_first": "Saara",
+        "author_last": "Matala"
+      }
+    ],
+    "title": "National Security, Security of Supply. Finlandisation as Diplomatic Practice and the Finnish Energy Dependency on the Soviet Union, 1948–1992",
+    "container_title": "The International History Review",
+    "volume": "45",
+    "issue": "3",
+    "pages": "551–71",
+    "url": "https://doi.org/10.1080/07075332.2022.2155212",
+    "abstract": "This article examines the intermingling of national security and security of oil supply in Finland through the Finnish oil policy, 1948–1992. During the Cold War, Finland built its oil economy based on Soviet oil instead of diversity and multilateral cooperation. That was closely related to the Finnish overarching Cold War policy that prioritised political and economic relations with the Soviet Union, referred to as finlandisation. The article scrutinises the ubiquitous influence of Soviet relations in Finnish society through the oil policy and shows how finlandisation as a policy strategy transformed into political practice. Two factors explain why Finland became dependent on Soviet oil: the double-coupling of national security and welfare and the quest for stability in Soviet relations. Two factors explain the longevity of Finnish dependency on Soviet oil: the intermingling of oil imports and export revenues and finlandisation as an established pattern of reasoning and decision-making. However, Finland was not a passive actor but managed its oil supply security through extensive socio-technical systems, including infrastructure and relations with other suppliers.",
+    "raw": "Matala, Saara. 2023. “National Security, Security of Supply. Finlandisation as Diplomatic Practice and the Finnish Energy Dependency on the Soviet Union, 1948–1992.” The International History Review 45 (2): 551–71. https://doi.org/10.1080/07075332.2022.2155212.",
+    "tags": [
+      "USSR",
+      "Post-Soviet"
+    ]
   }
 ]
