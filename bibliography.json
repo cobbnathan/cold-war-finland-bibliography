@@ -2250,5 +2250,26 @@
       "Festivals",
       "USSR"
     ]
+  },
+  {
+    "id": "hjerppe_2008",
+    "resource_type": "article",
+    "year": 2008,
+    "authors": [
+      {
+        "author_first": "Riitta",
+        "author_last": "Hjerppe"
+      }
+    ],
+    "title": "An Economic History of Finland",
+    "container_title": "EH.Net Encyclopedia",
+    "url": "https://eh.net/encyclopedia/an-economic-history-of-finland/",
+    "abstract": "Finland in the early 2000s is a small industrialized country with a standard of living ranked among the top twenty in the world. At the beginning of the twentieth century it was a poor agrarian country with a gross domestic product per capita less than half of that of the United Kingdom and the United States, world leaders at the time in this respect. Finland was part of Sweden until 1809, and a Grand Duchy of Russia from 1809 to 1917, with relatively broad autonomy in its economic and many internal affairs. It became an independent republic in 1917. While not directly involved in the fighting in World War I, the country went through a civil war during the years of early independence in 1918, and fought against the Soviet Union during World War II. Participation in Western trade liberalization and bilateral trade with the Soviet Union required careful balancing of foreign policy, but also enhanced the welfare of the population. Finland has been a member of the European Union since 1995, and has belonged to the European Economic and Monetary Union since 1999, when it adopted the euro as its currency.",
+    "raw": "Hjerppe, Riitta. 2008. “An Economic History of Finland.” EH.Net Encyclopedia. https://eh.net/encyclopedia/an-economic-history-of-finland/.",
+    "tags": [
+      "Neutrality",
+      "Post-Soviet",
+      "USSR"
+    ]
   }
 ]
