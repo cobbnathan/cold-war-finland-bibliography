@@ -2271,5 +2271,19 @@
       "Post-Soviet",
       "USSR"
     ]
+  },
+  {
+    "id": "infofinland_nd",
+    "resource_type": "website",
+    "authors": [
+    ],
+    "title": "History of Finland",
+    "container_title": "InfoFinland",
+    "url": "https://infofinland.fi/en/information-about-finland/finnish-history#1s9emasx",
+    "abstract": "This page provides an overview of Finnish history from prehistoric times to the modern era. It traces Finland's origins as a region of early settlements along trade routes, its incorporation into the Swedish kingdom following the Treaty of Nöteborg in 1323, and the subsequent five centuries during which Finnish and Swedish history were closely intertwined. The page then covers Finland's transition to Russian rule in the early 19th century, during which the country enjoyed significant autonomy as a grand duchy and experienced a growing national movement, culminating in the publication of the Kalevala in 1835 and the gradual elevation of the Finnish language to official status. The overview concludes with Finland's path to independence and its integration into European and international institutions in the 20th century.",
+    "raw": "InfoFinland. “History of Finland.” InfoFinland. https://infofinland.fi/en/information-about-finland/finnish-history#1s9emasx.",
+    "tags": [
+      "Historical Survey"
+    ]
   }
 ]
