@@ -2310,5 +2310,30 @@
     "tags": [
       "Historical Survey"
     ]
-  }
+  },
+   {
+    "id": "kortti_2022",
+    "resource_type": "article",
+    "year": 2022,
+    "authors": [
+      {
+        "author_first": "Jukka",
+        "author_last": "Kortti"
+      }
+    ],
+    "title": "From Americanisation to Finlandisation",
+    "container_title": "Mediehistorisk Tidsskrift",
+    "volume": "19",
+    "issue": "37–38",
+    "pages": "204–15",
+    "url": "http://hdl.handle.net/10138/350502",
+    "abstract": "This article challenges the narrative, popularized by a 2021 Finnish documentary series, that Finland's media and elite were entirely \"Finlandised\" throughout the Cold War—that is, forced to self-censor in deference to Soviet interests. Instead, the author argues that Finnish news journalism was, if anything, strongly Americanised before the late 1960s, with genuine Finlandisation only taking hold after the 1961 Note Crisis. Focusing on Finland's largest newspaper, *Helsingin Sanomat*, the article traces how editor-in-chief Eljas Erkko—an American enthusiast educated in Brooklyn—embedded pro-American content into Finnish media through Disney comics, *Reader's Digest*, syndicated cartoons, and connections to U.S. intelligence-linked institutions like USIS, the CIA-funded Forum World Feature, and the International Press Institute. Despite Finland's unique geopolitical position (excluded from Marshall Plan aid, bound by a mutual assistance pact with the USSR), its press remained defiantly critical of the Soviet Union well into the late 1950s, exemplified by a provocative 1958 political cartoon. Only after the 1961 Note Crisis did Finnish newspapers and broadcaster Yle begin practicing systematic self-censorship regarding Soviet affairs, marking the true onset of Finlandisation roughly a decade later than commonly assumed.",
+    "raw": "Kortti, Jukka. 2022. “From Americanisation to Finlandisation.” Mediehistorisk Tidsskrift 19 (37–38): 204–15. http://hdl.handle.net/10138/350502.",
+    "tags": [
+      "Neutrality",
+      "USA",
+      "USSR",
+      "YLE"
+    ]
+    }
 ]
