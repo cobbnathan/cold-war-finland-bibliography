@@ -2335,5 +2335,28 @@
       "USSR",
       "YLE"
     ]
+    },
+  {
+    "id": "karja_2015",
+    "resource_type": "article",
+    "year": 2015,
+    "authors": [
+      {
+        "author_first": "Antti-Ville",
+        "author_last": "Kärjä"
+      }
+    ],
+    "title": "Cultural Politics of Music Censorship in 'Post-Soviet' Finland",
+    "container_title": "Danish Musicology Online",
+    "volume": "Special Edition: Researching Music Censorship",
+    "pages": "91–106",
+    "url": "https://www.danishmusicologyonline.dk/arkiv/arkiv_dmo/dmo_saernummer_2015/dmo_saernummer_2015_musikcensur_05.pdf",
+    "abstract": "This article examines how the notion of censorship has been discursively constructed in \"post-Soviet\" Finland, focusing on music. Drawing on 431 articles containing both censorship- and music-related keywords, retrieved from the digital archive of Helsingin Sanomat between 27 December 1991 (the day after the USSR's dissolution) and 3 June 2013, the author applies Foucauldian discourse analysis to identify recurring \"statements\" about censorship and group them into discourses. Four such discourses emerge: distantiation (temporal and spatial, whereby censorship is framed as belonging either to Finland's Cold War past or to \"foreign,\" typically non-Western, societies), red rag (censorship as a source of publicity and commercial value), IPR censorship (framed around digital piracy and copyright enforcement), and self-censorship (linked ambivalently to the legacy of Finlandisation as well as to emotional or artistic inhibition). The analysis shows that although legal censorship is formally absent from Finnish legislation—except via the Act on Audiovisual Programmes, which explicitly exempts pure music—the concept remains discursively active and contested, continually reasserted through struggles over who holds authority to define and deploy it. The study argues that these tensions reveal censorship as an ongoing \"dispositif\" linking discursive and material practices, still shaped by Finland's ambiguous position between East and West.",
+    "raw": "Kärjä, Antti-Ville. 2015. “Cultural Politics of Music Censorship in 'Post-Soviet' Finland.” Danish Musicology Online, Special Edition: Researching Music Censorship: 91–106. https://www.danishmusicologyonline.dk/arkiv/arkiv_dmo/dmo_saernummer_2015/dmo_saernummer_2015_musikcensur_05.pdf.",
+    "tags": [
+      "Neutrality",
+      "Cultural Diplomacy",
+      "Post-Soviet"
+    ]
     }
 ]
